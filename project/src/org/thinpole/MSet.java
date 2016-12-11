@@ -45,7 +45,6 @@ public class MSet<T> 	{
 		}
 		workingNode = new Node();
 		workingNode.value = element;
-		workingNode.prev = lastNode;
 		lastNode.next = workingNode;
 		lastNode = workingNode;
 		count++;
@@ -53,7 +52,6 @@ public class MSet<T> 	{
 	}
 
 	class Node {
-		private Node prev;
 		private Node next;
 		private T value;
 	}
